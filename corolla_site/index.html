@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota Corolla XEi 2.0 Automático 2019</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 22px;
+      color: #d32f2f;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      display: block;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .details {
+      margin-top: 30px;
+    }
+    .details h2 {
+      margin-bottom: 10px;
+    }
+    .details ul {
+      list-style: none;
+      padding: 0;
+    }
+    .details ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .buy-btn {
+      display: block;
+      margin: 25px auto;
+      padding: 15px 25px;
+      background: #28a745;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      text-align: center;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .buy-btn:hover {
+      background: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background: #222;
+      color: #fff;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 8px;
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .next, .prev {
+      position: absolute;
+      top: 50%;
+      font-size: 60px;
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+    .next { right: 10px; }
+    .prev { left: 10px; }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .buy-btn {
+        width: 100%;
+        font-size: 16px;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+      .price {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Toyota Corolla XEi 2.0 Automático 2019</h1>
+    <p>Carro seminovo em excelente estado</p>
+  </header>
+
+  <div class="container">
+    <div class="price">R$ 97.900</div>
+
+    <div class="gallery">
+      <a href="#img1"><img src="img/corolla1.png" alt="Toyota Corolla Frente"></a>
+      <a href="#img2"><img src="img/corolla2.png" alt="Toyota Corolla 3/4"></a>
+      <a href="#img3"><img src="img/corolla3.png" alt="Toyota Corolla Frente Superior"></a>
+      <a href="#img4"><img src="img/corolla4.png" alt="Toyota Corolla Lateral"></a>
+      <a href="#img5"><img src="img/corolla5.png" alt="Toyota Corolla Traseira"></a>
+      <a href="#img6"><img src="img/corolla6.png" alt="Interior Frente"></a>
+      <a href="#img7"><img src="img/corolla7.png" alt="Painel e Volante"></a>
+      <a href="#img8"><img src="img/corolla8.png" alt="Odômetro"></a>
+      <a href="#img9"><img src="img/corolla9.png" alt="Bancos"></a>
+    </div>
+
+    <div class="details">
+      <h2>Detalhes do veículo</h2>
+      <ul>
+        <li>Ano/Modelo: 2019</li>
+        <li>Versão: XEi 2.0 16V Flex Automático</li>
+        <li>Cor: Branco</li>
+        <li>Quilometragem: 72.721 km</li>
+        <li>Câmbio: Automático</li>
+        <li>Combustível: Flex</li>
+        <li>Portas: 4</li>
+        <li>Revisões em dia</li>
+        <li>Documentação OK</li>
+      </ul>
+    </div>
+
+    <a href="https://wa.me/5599999999999?text=Olá! Tenho interesse no Corolla XEi 2019." class="buy-btn" target="_blank">Comprar Agora</a>
+  </div>
+
+  <footer>
+    <p>© 1995-2025 Webmotors S.A. CNPJ: 03.347.828/0001-09 Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Lightbox com navegação completa -->
+  <div id="img1" class="lightbox"><a href="#" class="close">&times;</a><img src="img/corolla1.png"><a href="#img2" class="next">›</a><a href="#img9" class="prev">‹</a></div>
+  <div id="img2" class="lightbox"><a href="#" class="close">&times;</a><img src="img/corolla2.png"><a href="#img3" class="next">›</a><a href="#img1" class="prev">‹</a></div>
+  <div id="img3" class="lightbox"><a href="#" class="close">&times;</a><img src="img/corolla3.png"><a href="#img4" class="next">›</a><a href="#img2" class="prev">‹</a></div>
+  <div id="img4" class="lightbox"><a href="#" class="close">&times;</a><img src="img/corolla4.png"><a href="#img5" class="next">›</a><a href="#img3" class="prev">‹</a></div>
+  <div id="img5" class="lightbox"><a href="#" class="close">&times;</a><img src="img/corolla5.png"><a href
